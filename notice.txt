@@ -1,0 +1,8 @@
+set git remote heroku to https://git.heroku.com/aqueous-brook-25435.git
+
+sometime you can't push to herku because of language buildpack
+>heroku buildpacks:set heroku/python
+
+it is important to specify a buildpack during app creation:
+
+> heroku create myapp --buildpack heroku/python
