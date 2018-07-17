@@ -25,7 +25,9 @@ SECRET_KEY = '2_(1=^w@j-622=o!$-(+oxqio%n2+_q9+db&(g*&@+@(3_x7@_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# represents which host/domain names our Django site can serve.
+# this is a security measure to prevent HTTP Host header attaks
+ALLOWED_HOSTS = ['*'] 
 
 
 # Application definition
